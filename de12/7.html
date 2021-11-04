@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="jp">
+<body bgcolor="#f0fff"
+<head>
+    <title>かわせみのページ</title>
+    
+    
+</head><h1>プログラミングを利用して作りたいものを作る</h1>
+<body> pycharmを使って<br>
+    まず、授業のまとめ<br>
+<br>
+ライブラリとは、よく使う機能や便利な機能を簡単に使えるようにした、便利ツール<br>
+モジュールと言ったり、パッケージと言ったりもする。プログラムを簡単にするための便利ツール
+
+下記のプログラムは、50から100の間の乱数を整数で発生させる例<br>
+randomというライブラリのrandintという命令文を使っています。<br>
+<br>
+import random<br>
+a = random.randint(50, 100)<br>
+print(a)<br>
+<br>
+<br>
+・標準ライブラリと外部ライブラリ<br>
+標準ライブラリ：Pythonにもともと入っているライブラリ<br>
+外部ライブラリ：世界中の開発者が他の人も使えるように公開しているライブラリ<br>
+<br>
+・標準ライブラリの使い方<br>
+乱数の例のようにimportして使います。<br>
+<br>
+・外部ライブラリの使い方<br>
+外部ライブラリはimportする前にインストールする。<br>
+Winはコマンドプロンプト<br>
+
+pip install ライブラリ名というコマンドでインストール<br>
+
+AppleSiliconなどでpipでうまくインストールできない場合は、下記のようにcondaで試す。<br>
+<br>
+conda install ライブラリ名<br>
+ライブラリ名のところは、ライブラリ名でない場合もあるので<br>
+pipの場合はPyPi.org<br>
+condaの場合はConda.orgで検索して、インストール<br>
+<br>
+webを検索していたらpython上でWikipedeiaの内容を表示できる。そこでwebに書いてあった下記のプログラムを自分のパソコンにコピーしてみました。<br>
+<br>
+import wikipedia<br>
+<br>
+# キーワードを設定<br>
+keyword = "犬"<br>
+# キーワードで検索<br>
+wikipedia.set_lang("ja")<br>
+result = wikipedia.search(keyword)<br>
+print("検索結果",result)<br>
+<br>
+print("最初の検索結果を表示")<br>
+page_data = wikipedia.page(result[0])<br>
+print(page_data.content)<br>
+
+
+
+
+    </body>
+</html>
