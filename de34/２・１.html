@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="jp">
+<body bgcolor="#FFFFCC"
+<head>
+    <title>かわせみのページ</title>
+    
+    
+</head><h1>マイコンを使ってみよう</h1>
+<h2>マイコンとは</h2>
+<body>  機械を操作するコンピュータチップ <br>
+<h2>専門用語</h2>
+　　抵抗・・電気を流れにくくするもの<br>
+コンデンサ・・・電気を蓄えたり放出したりする電子部品。直流を通さないで絶縁するはたらきもある。<br>
+トランジスタ・・・電気の流れをコントロールする部品。<br>
+ダイオード・・・電気の流れを一方通行にする部品。<br>
+    Lチカ・・・LEDをチカチカさせることを<br>
+    LEDは長い方が＋、短い方がーで、+はアノード、ーはカソードと呼ぶ<br>
+    
+    <br>
+    
+    
+</div>
+
+</body>   
+<h2>LEDとマイコンをつなげてみる</h2>
+<body>LEDの
+    長い方（＋）を１３番ピン
+    短い方（ー）をGNDに
+    につなげます。<br>
+    <br>
+    下記のプログラムをアルディーノに書き込む<br>
+    void setup() {
+        // put your setup code here, to run once:
+        pinMode(13,OUTPUT);
+      }
+      
+      void loop() {
+        // put your main code here, to run repeatedly:
+        digitalWrite(13,HIGH);
+        delay(500);
+        digitalWrite(13,LOW);
+        delay(500);
+      
+      }<br>
+      アルディーノの画面左上にある矢印ボタンを押す<br>
+      Arduinoのスケッチを作成するとという２つのプログラムがもともと書いてある。<br>
+      <br>
+setup・・・最初に一回だけ実行されるプログラム<br>
+loop・・・ずっと繰り返し実行されるプログラム<br>
+{ 〜 }の間がそれぞれのプログラム<br>
+Arduinoではifやforのように{}でくくるループや条件分岐の場合を除き、基本的に命令文の最後には;(セミコロン)をつける<br>
+<br>
+デジタルピン（1〜13）の設定<br>
+・pinMode・・・指定したピンを入力用に使うのか、出力用に使うのかを設定する<br>
+LEDを点灯させるために13番ピンから電気を流したい（出力したい）ので、pinMode(13,OUTPUT);<br>
+・digitalWrite：デジタルピンの出力をLOWかHIGHで設定する。<br>
+LOW→0V<br>
+HIGH→5V<br>
+が出力されます。<br>
+つまり、digitalWrite(HIGH)でLEDがつき、digitalWrite(LOW)でLEDが消える事になります。<br>
+<br>
+delayは指定した時間待つ命令<br>
+単位はミリ秒(ms)<br>
+delay(1000)→1秒待つ (1000/1000=1)<br>
+delay(100)→0.1秒待つ(100/1000=0.1)<br>
+delay(10)→0.01秒待つ(10/1000=0.01)<br>
+<br>
+if (条件式){
+    　処理内容1 　//条件式を満たす場合にのみ実行する
+    }
+    else{
+    　処理内容2 　//条件式を満たさない場合にのみ実行される
+    }<br>
+    <br>
+    明るさセンサーを使う<br>
+    <br>
+    ブレッドボードを使って<br>
+Arduinoの5Vー10kΩの抵抗ーCdSセルーArduinoのGNDの流れができるような配線をする。<br>
+次に、10kΩの抵抗とCdSセルが繋がっている列からArduinoのA1ピンに配線します。<br>
+<br>
+今回の課題は、LEDを暗くなった点灯させ、明るくなったら消灯するプログラムを書くこと<br>
+If文と明るさセンサーのコードを組み合わせる。<br>
+<br>
+void setup() {
+    // put your setup code here, to run once:
+    Serial.begin(9600);
+    pinMode(13,OUTPUT);
+  }
+  
+  void loop() {
+    // put your main code here, to run repeatedly:
+    int val=0;
+    val=analogRead(1);
+    Serial.println(val);
+    delay(300);
+  
+  
+      if(val<100){
+        // もしiが10より小さかったら間隔は0.3秒
+        digitalWrite(13,LOW);
+      }else{
+        // そうじゃなかったら間隔は2秒
+        digitalWrite(13,HIGH);
+      }
+        
+    }<br>
+    
+
+    </body>
+</html>
