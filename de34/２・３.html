@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="jp">
+<body bgcolor="#FFFFCC"
+<head>
+    <title>かわせみのページ</title>
+    
+    
+</head><h1>ステッピングモーター</h1>
+ステッピングモーターとは、定の角度ずつ回転するモーター<br>
+<h2>つなぎ方</h2>
+ステッピングモーターをA4988に接続し、STEPを９番ピン、DIRを8番ピン、VDDを5V、GNDとGNDをつなぐ
+
+<img src="images/sutepping.png " width="30%" height="30%"><br>
+<br>
+<br>
+<h1>以下コード</h1>
+const int DIR  = 8;,<br>
+const int STEP = 9;<br>
+<br>
+void setup() {
+  pinMode(DIR, OUTPUT);
+  pinMode(STEP, OUTPUT);
+  digitalWrite(DIR, LOW);
+  digitalWrite(STEP, LOW);
+}
+
+void loop() {
+
+  for (int i=0; i <= 50; i++){
+    clockwise(5000);
+  }
+  for (int i=0; i <= 50; i++){
+    counter_clockwise(5000);
+  }
+}
+
+void clockwise(int delaytime){
+  digitalWrite(DIR, HIGH);//HIGHは時計回り
+
+  digitalWrite(STEP, HIGH);
+  delayMicroseconds(delaytime);
+  digitalWrite(STEP, LOW);
+  delayMicroseconds(delaytime);
+
+}
+
+void counter_clockwise(int delaytime){
+
+  digitalWrite(DIR, LOW);//はLOWは反時計回り
+  digitalWrite(STEP, HIGH);
+  delayMicroseconds(delaytime);
+  digitalWrite(STEP, LOW);
+  delayMicroseconds(delaytime);
+}
+    
+    
+</div>
+<br>clockwise…時計回り
+<br>counter_clockwise・・反時計回り
+<br>intの中の＜は角度（３６０度で一周を表す。）
+</body>   
+ 
+    
+
+    </body>
+</html>
