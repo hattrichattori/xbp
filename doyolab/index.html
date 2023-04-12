@@ -1,28 +1,315 @@
 <!DOCTYPE html>
-<html lang="jp">
+<html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <title>XBP_HPsample</title>
+<meta charset="utf8">
+
+<title>XBP_HPsample</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/homebutton.png">
-    
-</head>
+
+    </head>
 <body>
     <logotohome>
     <a href="../index.html"><img src="./images/0_XBlogo.png" alt=""></a>
     </logotohome>
-    <h1>道用ゼミ</h1>
-       
-
-        
-        </ol>
-        <h2>やること</h2>
-        
-        
-
     
 <br>
+
+<body bgcolor="#fff0f5" text="#000000">
+<link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet">
+<head>
+   <meta charset="utf-8"/>
+   <title>かわせみさんの備忘録</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</header>
+<body>
+    <header class="NavigationMenu">
+       <center><h1>道用ゼミ</h1></center>
+    </header>
+    <br>
+    <img src="./images/26223276_s.jpg" style="">
+    <br>
+    <center><h1>3年次道用ゼミについて</h1></center>
+    <br>
+   <center> <h2>道用ゼミでは自分たちのやりたいことを突き詰めていきます。<br>１年～２年の間で培ってきた各々のクリエイティブな思想を生かして活動します<br>
+<br><br><br>
+
+</h2></center>
+<br><br>
+    <center> <div style="display: inline-block; background: #f08080; padding: 3px 10px; color: #ffffff;"><strong><h1>かわせみの活動理念</h1></strong></div>
+<div style="padding: 10px; border: 2px solid #f08080;">   <h2> 私たちの活動拠点であるファブラボには様々なデジタル機器があり、プロトタイプの力強い味方です。<br>かわせみのHPを通じて「作ることは決してハードルの高いものばかりではない」ことを伝えていきたいです。</h2></div>
 <br>
+<br>
+<!------------------------------横スクロール作成中------------------------------>
+<div class="container">
+  <div class="description panel blue">
+    <div><h1>Horizontal snapping sections (simple)</h1>
+      <p>Scroll vertically to scrub the horizontal animation. It also dynamically snaps to the sections in an organic way based on the velocity. The snapping occurs based on the natural ending position after momentum is applied, not a simplistic "wherever it is when the user stops".</p>
+      <div class="scroll-down">Scroll down<div class="arrow"></div></div>
+    </div>
+  </div>
+
+
+  <section class="panel red">
+    ONE
+  </section>
+  <section class="panel orange">
+    TWO
+  </section>
+  <section class="panel purple">
+    THREE
+  </section>
+  <section class="panel green">
+    FOUR
+  </section>
+  <section class="panel gray">
+    FIVE
+  </section>
+
+</div>
+
+
+
+<header>
+  <a href="https://greensock.com/scrolltrigger">
+    <img class="greensock-icon" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/scroll-trigger-logo-light.svg" width="200" height="64" />
+  </a> 
+</header>
+<script src="./umd/gsap.js"></script>
+<script src="./umd/ScrollTrigger.js"></script>
+
+<div class="item item01"><span>1</span></div>
+<div class="item item02"><span>2</span></div>
+<div class="item item03"><span>3</span></div>
+
+<div class="area js-area">
+  <div class="wrap js-wrap">
+    <div class="item item04 js-item"><span>4</span></div>
+    <div class="item item05 js-item"><span>5</span></div>
+    <div class="item item06 js-item"><span>6</span></div>
+  </div>
+</div>
+
+<div class="item item01"><span>7</span></div>
+<div class="item item02"><span>8</span></div>
+<div class="item item03"><span>9</span></div>
+<style>
+.area{
+  overflow: hidden;
+}
+.wrap{
+  display: flex;
+}
+.item{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff;
+}
+.item01{ background: #e94d15; }
+.item02{ background: #f18d1d; }
+.item03{ background: #f8b633; }
+.item04{ background: #8cc561; }
+.item05{ background: #56aa59; }
+.item06{ background: #3d6b35; }
+
+window.addEventListener("load", function(){
+
+//プラグインを定義
+gsap.registerPlugin(ScrollTrigger);
+
+const area  = document.querySelector(".js-area");
+const wrap  = document.querySelector(".js-wrap");
+const items = document.querySelectorAll(".js-item");
+const num   = items.length;
+
+//横幅を指定
+gsap.set(wrap,  { width: num * 100 + "%" });
+gsap.set(items, { width: 100 / num + "%" });
+
+gsap.to(items, {
+  xPercent: -100 * ( num - 1 ), //x方向に移動させる
+  ease: "none",
+  scrollTrigger: {
+    trigger: area, //トリガー
+    start: "top top", //開始位置
+    end: "+=1000", //終了位置
+    pin: true, //ピン留め
+    scrub: true, //スクロール量に応じて動かす
+  }
+});
+});</style>
+<!----------------------------------------------------------------------------->
+    <div class="Content">
+    </div>
+</body>
+<!--吹き出しはじまり-->
+<div class="balloon5">
+  <div class="faceicon">
+    ikonn <img~>★
+  </div>
+  <div class="chatting">
+    <div class="says">
+      <p><h1>おせちたべたい！！！</h1></p>
+    </div>
+  </div>
+</div>
+<!--吹き出し終わり-->
+<br>
+<style>
+.balloon5 {
+  width: 100%;
+  margin: 1.5em 0;
+  overflow: hidden;
+}
+
+.balloon5 .faceicon {
+  float: left;
+  margin-right: -90px;
+  width: 80px;
+}
+
+.balloon5 .faceicon img{
+  width: 100%;
+  height: auto;
+  border: solid 3px #d7ebfe;
+  border-radius: 50%;
+}
+
+.balloon5 .chatting {
+  width: 100%;
+}
+
+.says {
+  display: inline-block;
+  position: relative; 
+  margin: 5px 0 0 105px;
+  padding: 17px 13px;
+  border-radius: 12px;
+  background:#f08080;
+}
+
+.says:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 18px; 
+  left: -24px;
+  border: 12px solid transparent;
+  border-right: 12px solid #f08080;
+}
+
+.says p {
+  margin: 0;
+  padding: 0;
+}
+LINE風
+</style>
+
+<a href="#">SEAds</a>
+<style>
+*/
+#headerbox .inner {
+text-align: center;
+}
+#header {
+height: 350px;
+margin: 0 auto;
+position: relative;
+text-align: left;
+width: 900px;
+}
+#header img {
+left: 0;
+position: absolute;
+top: 0;
+}
+#header #headertxt {
+left: 50%;
+position: absolute;
+top: 80px;　（高さ位置、数値を小さくすると上、大きくすると下へ移動します）
+width: 20%;　（横幅を数値で指定します）
+
+}
+#header .title, #header .desc{
+padding-left: 5px;
+padding-right: 5px;
+}
+#header .title a {
+color:#333333;　（タイトルカラーを変えられます）
+text-shadow: 0 0 1px rgba(51,51,51,.3);
+font-size: 28px;
+font-weight: 700;
+line-height: 120%;
+text-decoration: none;
+word-wrap: break-word;
+</style>
+
+<style>
+a {
+  display: inline-block;
+  color: rgba(152, 152, 152, 0.43);
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  font-size: 20px;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+  font-weight: bold;
+  background-image: linear-gradient(#e8e8e8 0%, #d6d6d6 100%);
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.5), 0 2px 2px rgba(0, 0, 0, 0.19);
+  border-bottom: solid 2px #b5b5b5;
+}
+
+</style>
+
+<style>
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.NavigationMenu{
+    height: 90px;
+    text-align: center;
+    background-color: #f08080;
+    color: #fff;
+}
+.Content{
+    flex: 1;
+    background-color: #fff0f5;
+    text-align: center;
+    margin-top: 15px;
+}
+ </style>
+
+<a href="#">鎌倉プロジェクト</a>
+<style>
+a {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #f08080;
+  color: #FFF;
+  border-bottom: solid 4px rgb(50, 50, 50);
+  border-radius: 10px;
+}
+
+a:active {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+  border-bottom: none;
+}</style>
+
+
+
+
 
 
 </body>
