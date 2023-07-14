@@ -1,13 +1,38 @@
+<html lang="ja">
+<head>
 <meta charset="utf-8"/>
    <title>かわせみさんの備忘録</title>
     <link rel="stylesheet" href="stylesheet.css">
-    <header></header><h1 class="logo"><a href="houkago.html"><img src= "images/ddoyoatama.png"width="100%"></a></h1>
-</header>
 <body>
-    <header class="NavigationMenu">
+  <div id="headimg">
+    <header>
+      <img src="images/ddoyoatama.png" alt="ヘッダー画像">
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="menu-toggle">
+        <!-- メニュー項目を追加 -->
+        <a href="file:///C:/Users/hatto/mygit/xbp/index.html"><h1>TOPに戻る</h1></a>
+      </nav>
     </header>
+  </div>
+
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+      document.querySelector('.menu').classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
     <br>
-    <center> <img src="./images/26223276_s.jpg" >
+    <center>
+      <h1>道用ゼミ・かわせみさんの活動記録</h1>
+       <img src="./images/kawasemi.jpg" id="myImage">
     <br>
     <h1>3年次道用ゼミについて</h1></center>
     <br>
@@ -16,8 +41,8 @@
 
 </h2></center>
 <br><br>
-    <center> <div style="display: inline-block; background: #2bb0b0; padding: 3px 10px; color: #ffffff;"><strong><h1>かわせみの活動理念</h1></strong></div>
-<div style="padding: 10px; border: 2px solid #2bb0b0;">   <h2> 私たちの活動拠点であるファブラボには様々なデジタル機器があり、プロトタイプの力強い味方です。<br>かわせみのHPを通じて「作ることは決してハードルの高いものばかりではない」ことを伝えていきたいです。</h2></div>
+    <center> <div style="display: inline-block; background: #2bb0b0; padding: 2px 5px; color: #ffffff;"><strong><h1>かわせみの活動理念</h1></strong></div>
+<div style="padding: 5px; border: 2px solid #2bb0b0;">   <h2> 私たちの活動拠点であるファブラボには様々なデジタル機器があり、プロトタイプの力強い味方です。<br>かわせみのHPを通じて「作ることは決してハードルの高いものばかりではない」ことを伝えていきたいです。</h2></div>
 <br> </center>
 <br>
 <div id="container">
@@ -32,7 +57,141 @@
 <main>
   <section>
   <center><h2 class="heading-031">SEAds</h2></center>
-  <style>.heading-031 {
+  <style>
+    a {
+  display: none;
+}
+
+div:hover a {
+  display: inline-block;
+}
+
+#headimg {
+      position: relative;
+    }
+    
+    #headimg header {
+      text-align: center;
+      position: relative;
+    }
+    
+    #headimg img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+    
+    .menu-toggle {
+      position: absolute;
+      top: 10px; /* 適切な位置に調整してください */
+      right: 30px; /* 適切な位置に調整してください */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 50px;
+      height: 40%;
+      cursor: pointer;
+    }
+    
+    .menu-toggle span {
+      background-color: #fff; /* ハンバーガーメニューの線の色 */
+      width: 150%;
+      height: 20%;
+    }
+    
+    .menu {
+      display: none;
+      position: absolute;
+      top: 50px; /* 適切な位置に調整してください */
+      margin-right:  60;
+      width: 100%;
+      background-color: #5ad3ab; /* メニューの背景色 */
+      padding: 10px;
+      text-align: center;
+    }
+    
+    .menu a {
+      display: block;
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: #fff; /* メニューのリンクの色 */
+    }
+
+
+  #myImage {
+    width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+h2
+{
+font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+ #myImage {
+    width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+a
+{
+font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+ #myImage {
+    width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+    #headimg {
+  width: 100%;
+  height: 200px; /* 適切な高さを指定してください */
+}
+
+#headimg header {
+  text-align: center;
+}
+
+#headimg img {
+  max-width: 100%;
+  max-height: 100%;
+}
+    h1 {
+font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+ #myImage {
+    width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+h2
+{
+font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+ #myImage {
+    width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+a
+{
+font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+ #myImage {
+    width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+  .heading-031 {
       position: relative;
       padding: .3em 0 .2em 1em;
       border-bottom: 3px solid #5ad3ab;
@@ -59,21 +218,12 @@
       width: 8px;
       background: #5ad3ab;
       content: '';
-  }</style>
-  
-  <center><h2>定期ワークショップを開催する学生団体</h2>
-   <br>   
-     <img src="images/ws55.jpeg" width="50%" height="50%"><br>
-</style>
-         <br>
-         <br><ol class="list-011">
-         <h2><li>設立２０２３年４月１日</li>
-          <li>メンバー：神奈川大学の学生を中心とした学生・社会人</li>          
-          <li>公式HP：<a href="https://sites.google.com/view/seads?fbclid=PAAaZieGosTzP5HvGQtd9BKlNmQ7ivoDP5Mp6elO43rNWXJ4f_OeyzB9P3Aog">SEAds</a></li>
-         </a></li></h2>  
-      </ol>
-      <a href="dlab2.html" class="btn btn-border-shadow btn-border-shadow--radius">SEAds活動記録</a></center>
-     <style>.list-011 {
+  }
+  img {
+      max-width: 50%;
+      height: auto;
+    }
+    .list-011 {
       list-style-type: disc;
       padding: 1em 1em 1em 2.5em;
       border-left: 5px solid #5ad3ab;
@@ -87,15 +237,8 @@
   .list-011 li::marker {
       color: #5ad3ab;
       font-size: 1.1em;
-  }</style> <br><br> 
-  </center><br><br>
-      </p>
-      <!--/area1--></section>
-    <section>
-      <br><br>
-   <br><br>
-        <center> <h2 class="heading-031">鎌倉プロジェクト </h2>
-        <style>.heading-031 {
+  }
+  .heading-031 {
             position: relative;
             padding: .3em 0 .2em 1em;
             border-bottom: 3px solid #5ad3ab;
@@ -122,24 +265,8 @@
             width: 8px;
             background: #5ad3ab;
             content: '';
-        }</style>
-        
-      <br>
-      <br>
-      <br>
-            
-            <img src="images/km513.jpeg" width="50%" height="50%"><br>
-      </style>
-               <br>
-               <br><ol class="list-011">
-               <h2><li>開始日：４月７日</li>
-                <li>メンバー：服部真恋・中川喬凱・吾妻未来・篠原尚希・チェンウェイハオ</li>         
-                <li>鎌倉市HP：<a href="https://www.city.kamakura.kanagawa.jp/seisaku-souzou/tyottoiikurashi.html">プロジェクトについて</a></li>
-                <li>よこはまウォッチャー：<a href="https://travelyokohama.hatenablog.jp/entry/kanagawauniv-kamakura-sdgs-20210929 ">協定について</a></li>
-               </a></li></h2> 
-            </ol>
-            <a href="dlab1.html" class="btn2 btn-border-shadow btn-border-shadow--radius">鎌倉P活動記録</a>
-           <style>.list-011 {
+        }
+        .list-011 {
             list-style-type: disc;
             padding: 1em 1em 1em 2.5em;
             border-left: 5px solid #5ad3ab;
@@ -153,22 +280,7 @@
         .list-011 li::marker {
             color: #5ad3ab;
             font-size: 1.1em;
-        }</style> <br><br>
-            
-        </center><br><br>
-            </p>
-            <!--/area1--></section>
-          <section></main>
-            <footer id="footer">
-              <small>&copy; copyright.</small>
-              </footer>
-                
-                <!--/contaier--></div>
-            <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-            <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/4-2-2/js/4-2-2.js"></script>
-            </body>
-<!------------------------------CSSはこの中で------------------------------>
-<STYLE>
+        }
 *,
 *:before,
 *:after {
@@ -330,7 +442,93 @@ a.btn2-border-shadow:hover:before {
   top: 0;
   left: 0;
 }
-</STYLE>
-<!----------------------------------------------------------------------------->
-    
- </style>
+  </style> 
+  ><br> 
+
+  
+  <center><h2>定期ワークショップを開催する学生団体</h2>
+   <br> 
+   <img src="images/ws55.jpeg"width="50%" height="50%" alt="イベントの様子">  
+</style>
+         <br>
+         <br><ol class="list-011">
+         <h2><li>設立２０２３年４月１日</li>
+          <li>メンバー：神奈川大学の学生を中心とした学生・社会人</li>          
+          <li>公式HP:<a href="https://sites.google.com/view/seads?fbclid=PAAaZieGosTzP5HvGQtd9BKlNmQ7ivoDP5Mp6elO43rNWXJ4f_OeyzB9P3Aog">SEAds</a></li>
+         </a></li></h2>  
+      </ol>
+      <br>
+      <a href="dlab2.html" class="btn btn-border-shadow btn-border-shadow--radius">SEAds活動記録</a></center>
+     
+  </center><br><br>
+      </p>
+      <!--/area1--></section>
+    <section>
+      <br><br>
+   <br><br>
+        <center> <h2 class="heading-031">鎌倉プロジェクト </h2> 
+      <br>
+      <br>
+      <br>
+            
+            <img src="images/km513.jpeg" width="50%" height="50%"><br>
+      </style>
+               <br>
+               <br><ol class="list-011">
+               <h2><li>開始日：４月７日</li>
+                <li>メンバー：服部真恋・中川喬凱・吾妻未来・篠原尚希・チェンウェイハオ</li>         
+                <li>鎌倉市HP:<a href="https://www.city.kamakura.kanagawa.jp/seisaku-souzou/tyottoiikurashi.html">プロジェクトについて</a></li>
+                <li>よこはまウォッチャー：<a href="https://travelyokohama.hatenablog.jp/entry/kanagawauniv-kamakura-sdgs-20210929 ">協定について</a></li>
+               </a></li></h2> 
+            </ol>
+            <br>
+            <a href="dlab1.html" class="btn2 btn-border-shadow btn-border-shadow--radius">鎌倉P活動記録</a>    
+        </center><br><br>
+
+        <center><h2 class="heading-031">ラボ巡礼後記 </h2></center>
+        <center><h2>ラボ巡り</h2>
+          <br> 
+          <img src="images/kuriyama.jpg" width="50%" height="50%"alt="各地のラボ">  
+       </style>
+                <br>
+                <br><ol class="list-011">
+                <h2><li>各地のラボを巡ります</li>
+                 <li>範囲:お金の許す限り日本・世界</li>          
+                 <li>拠点:<a href="https://www.kanagawa-u.ac.jp/cooperation/project/fablab/">FABLABみなとみらい</a></li>
+                </a></li></h2>  
+             </ol>
+             <br>
+             <a href="dlab7.html" class="btn btn-border-shadow btn-border-shadow--radius">記録を見る</a></center>
+            
+         </center><br><br>
+         <center><h2 class="heading-031">作品撮り・写真など</h2></center>
+         <center>
+          <br> 
+          <img src="images/DSC00076.jpg" width="50%" height="50%"alt="写真系のいろいろ">  
+       </style>
+                <br>
+                <br><ol class="list-011">
+                <h2><li>その他の活動</li>
+                 <li>モデルをした写真・作った作品など</li>          
+                 <li>専属カメラマン:<a href="https://instagram.com/jotaro_camera?igshid=OGQ5ZDc2ODk2ZA==">じょーたろー</a></li>
+                 <li>アパレル:<a href="https://collegemarket.jp/collections/jindai">JINDAIマーケット</a></li>
+                </a></li></h2>  
+             </ol>
+             <br>
+             <a href="dlab8.html" class="btn btn-border-shadow btn-border-shadow--radius">記録を見る</a></center>
+            
+         </center><br><br>
+
+            </p>
+            <!--/area1--></section>
+          <section></main>
+            <footer id="footer">
+              <small>&copy; copyright.</small>
+              </footer>
+                
+                <!--/contaier--></div>
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+            <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/4-2-2/js/4-2-2.js"></script>
+            </body>
+
+            

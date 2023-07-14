@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<div id="headimg"> <header><img src= "images/ddoyoatama.png"></header></div>
+<title>らぼたび</title>
+<link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+<link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/8-2-1/css/8-2-1.css">
+
+<link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-6/css/6-1-6.css">
+
+</head>
+<style>
+  .slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
+   width:94%;
+    margin:0 auto;
+}
+
+.slider img {
+    width:100%;/*スライダー内の画像を横幅100%に*/
+    height:auto;
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+
+.slider .slick-slide {
+    margin:0 10px;
+}
+
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev, 
+.slick-next {
+    position: absolute;/*絶対配置にする*/
+    top: 42%;
+    cursor: pointer;/*マウスカーソルを指マークに*/
+    outline: none;/*クリックをしたら出てくる枠線を消す*/
+    border-top: 2px solid #5ad3ab;/*矢印の色*/
+    border-right: 2px solid #5ad3ab;/*矢印の色*/
+    height: 15px;
+    width: 15px;
+}
+
+.slick-prev {/*戻る矢印の位置と形状*/
+    left: -1.5%;
+    transform: rotate(-135deg);
+}
+
+.slick-next {/*次へ矢印の位置と形状*/
+    right: -1.5%;
+    transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+    text-align:center;
+  margin:20px 0 0 0;
+}
+
+.slick-dots li {
+    display:inline-block;
+  margin:0 5px;
+}
+
+.slick-dots button {
+    color: transparent;
+    outline: none;
+    width:8px;/*ドットボタンのサイズ*/
+    height:8px;/*ドットボタンのサイズ*/
+    display:block;
+    border-radius:50%;
+    background:#ccc;/*ドットボタンの色*/
+}
+
+.slick-dots .slick-active button{
+    background:#5ad3ab;/*ドットボタンの現在地表示の色*/
+}
+
+
+/*========= レイアウトのためのCSS ===============*/
+
+body{
+  background:#eee;
+}
+
+h2,p {
+    text-align:center;
+    padding:20px;
+}
+
+ul{
+  margin:0;
+  padding: 0;
+  list-style: none;
+}
+
+a{
+  color: #5ad3ab;
+}
+
+a:hover,
+a:active{
+  text-decoration: none;
+}
+</style>
+<body>
+  <div id="main-vidual">
+  <img src="img/01.jpg" alt="">
+  <!--/main-vidual--></div>   
+  <main>
+    <ul id="page-link">
+      <li><a href="#area-1">ファブラボ清州</a></li>
+      <li><a href="#area-2">特徴</a></li>
+      <li><a href="#area-3">感想</a></li>
+    </ul>
+    <section class="area" id="area-1">
+     <center> <h2>ファブラボ清州</h2>
+      <a href="https://www.fablabs.io/labs/fablabchungju"><img src="images/labmeguri/sinsyuu.jpg" alt="ファブラボ清州"width="600" height="400"></a>  
+    <!--/area1--></section>
+      <section class="area" id="area-2">
+      <h2>ファブラボ清州の特徴</h2>
+      <p></p>
+    <!--/area2--></section>
+      <section class="area" id="area-3">
+      <h2>COMINGSOON</h2>
+      <p></p>
+    <!--/area3--></section>
+  <!--/main--></center></main>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/8-2-1/js/8-2-1.js"></script>
+</body>
+</html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+
+<h2>他の記事を読む</h2>
+  
+<ul class="slider">
+  <li><a href="fmeg3.html"><img src="images/labmeguri/kamakura.jpg" alt="">ファブラボ鎌倉</a></li>
+  <li><a href="fmeg2.html"><img src="images/labmeguri/kuriyama.jpg" alt="">ファブラボ栗山</a></li>
+  <li><a href="fmeg5.html"><img src="images/labmeguri/dmm.jpg" alt="">DMM.MAKE</a></li>
+  <li><a href="fmeg1.html"><img src="images/labmeguri/flat.jpg.jpg" alt="">ファブラボ仙台</a></li>
+<!--/slider--></ul>
+  <p><a href="https://kenwheeler.github.io/slick/" target="_blank"></a></p>
+    
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-6/js/6-1-6.js"></script>
+  
+</body>
+</head></html>

@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf8">
+<div id="headimg">
+  <header>
+    <img src="images/ddoyoatama.png" alt="ヘッダー画像">
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="menu-toggle">
+      <!-- メニュー項目を追加 -->
+      <a></a>
+      <a href="index.html"><h3>戻る</h3></a>
+      <a></a>
+    </nav>
+  </header>
+</div>
+<script>
+  document.querySelector('.menu-toggle').addEventListener('click', function() {
+    document.querySelector('.menu').classList.toggle('show');
+  });
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+<style>
+    a {
+  display: none;
+}
+
+div:hover a {
+  display: inline-block;
+  margin-top:70;
+}
+
+#headimg {
+      position: relative;
+    }
+    
+    #headimg header {
+      text-align: center;
+      position: relative;
+    }
+    
+    #headimg img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+    
+    .menu-toggle {
+      position: absolute;
+      top: 10px; /* 適切な位置に調整してください */
+      right: 30px; /* 適切な位置に調整してください */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 50px;
+      height: 40%;
+      cursor: pointer;
+    }
+    
+    .menu-toggle span {
+      background-color: #fff; /* ハンバーガーメニューの線の色 */
+      width: 150%;
+      height: 20%;
+    }
+    
+    .menu {
+      display: none;
+      position: absolute;
+      top: 50px; /* 適切な位置に調整してください */
+      margin-right:  60;
+      width: 100%;
+      background-color: #5ad3ab; /* メニューの背景色 */
+      padding: 10px;
+      text-align: center;
+    }
+    
+    .menu a {
+      display: block;
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: #fff; /* メニューのリンクの色 */
+    }
+
+
+h1 {
+font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+ #myImage {
+    width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+h2
+{
+font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+ #myImage {
+    width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+h4 {
+font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+ #myImage {
+    width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+a
+{
+font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+ #myImage {
+    width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.button {
+  display: inline-block;
+  padding: 20px 40px;
+  background-color: #5ad3ab;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 4px;
+}
+
+.button:hover {
+  background-color: #5ad3ab;
+}
+</style>
+
+<title>XBP_HPsample</title>
+<body>
+  
+
+<center><link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet"></center>
+<head>
+   <meta charset="utf-8"/>
+   <title>その他の活動</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</header>
+<body>
+    <header class="NavigationMenu">
+    </header>
+    <br>
+    <center><h1>ゼミの時間外での活動</h1>
+    <img src="./images/otherkatudou/sonotanokatudou.jpg"id="myImage">
+    <br>
+    <br>
+   <h2>講演会やアクリルアワードなどゼミの時間外でやったことをまとめます</h2><br><br></center>
+<br>
+<!------------------------------------------------------------------------------->
+<title>4-2-2背景色が伸びる（下から上）</title>
+<meta name="description"  content="書籍「動くWebデザインアイディア帳」のサンプルサイトです">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+<link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+<link rel="stylesheet" type="text/css"  href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/4-2-2/css/4-2-2.css">
+</head>
+<body>
+<div id="splash">
+<div id="splash-logo">please wait...</div>
+<!--/splash--></div>
+<div class="splashbg"></div><!---画面遷移用-->
+
+  <div id="container">
+
+    
+  <main>
+   <center> <section>
+    <h2 class="heading-031">石川拳大さんの映画上映会</h2>
+    <style>.heading-031 {
+        position: relative;
+        padding: .3em 0 .2em 1em;
+        border-bottom: 3px solid #5ad3ab;
+        color: #715050;
+    }
+    
+    .heading-031::before {
+        position: absolute;
+        top: 0;
+        left: .3em;
+        transform: rotate(55deg);
+        height: 11px;
+        width: 12px;
+        background: #5ad3ab;
+        content: '';
+    }
+    
+    .heading-031::after {
+        position: absolute;
+        transform: rotate(15deg);
+        top: .6em;
+        left: 0;
+        height: 8px;
+        width: 8px;
+        background: #5ad3ab;
+        content: '';
+    }</style>
+    
+    <h2>特別なサーフボード・アライア</h2>
+     <br>   
+    <crnter>
+        <img src="images/otherkatudou/kentaeiga.jpg" width="50%" height="50%"><br>
+        <h4>OBの石川拳大さんが神大に来ました</h4>
+        <br>
+        <a href="other2.html" class="button">記事を読む</a></crnter>
+
+<style>/* --YouTubeサイズ調整-- */
+.video {
+position: relative;
+height: 0;
+padding: 30px 0 56.25%;
+overflow: hidden;
+}
+
+.video iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+.list-011 {
+list-style-type: disc;
+padding: 1em 1em 1em 2.5em;
+border-left: 5px solid #5ad3ab;
+background-color: #f2f2f2;
+    }
+    
+    .list-011 li {
+        padding: .3em .3em .3em 0;
+    }
+    
+    .list-011 li::marker {
+        color: #5ad3ab;
+        font-size: 1.1em;
+    }</style> <br><br>
+        
+    </center><br><br>
+        </p>
+        <!--/area1--></section>
+      <section>
+    <!--/area2--></section>
+      <section>
+        <h2 class="heading-031">アクリルアワード</h2>
+        <style>.heading-031 {
+            position: relative;
+            padding: .3em 0 .2em 1em;
+            border-bottom: 3px solid #5ad3ab;
+            color: #715050;
+        }
+        
+        .heading-031::before {
+            position: absolute;
+            top: 0;
+            left: .3em;
+            transform: rotate(55deg);
+            height: 11px;
+            width: 12px;
+            background: #5ad3ab;
+            content: '';
+        }
+        
+        .heading-031::after {
+            position: absolute;
+            transform: rotate(15deg);
+            top: .6em;
+            left: 0;
+            height: 8px;
+            width: 8px;
+            background: #5ad3ab;
+            content: '';
+        }</style>
+        <center> <section>
+          <h2>パーテーションアクリルを再利用したコンペティション</h2>
+          <br>   
+          <crnter>
+          <img src="images/otherkatudou/akuriru.jpg" width="50%" height="50%"><br>
+          <h4>コロナ渦に使われたパーテーションを破棄される前に再利用しました。</h4><br> 
+          <a href="other3.html" class="button">記事を読む</a></crnter>
+                <style>.list-011 {
+                    list-style-type: disc;
+                    padding: 1em 1em 1em 2.5em;
+                    border-left: 5px solid #5ad3ab;
+                    background-color: #f2f2f2;
+                }
+                
+                .list-011 li {
+                    padding: .3em .3em .3em 0;
+                }
+                
+                .list-011 li::marker {
+                    color: #5ad3ab;
+                    font-size: 1.1em;
+                }</style> <br><br>
+                    
+                </center>
+      <!--/area3--></section>
+      <section>
+    <!--/area4--></section>
+      <section>
+        <center> <section>
+            <h2 class="heading-031">被写体・モデルフォリオ</h2>
+           <br>   
+          <h2>かわせみの写真集です（笑）</h2>
+          <br>   
+          <img src="images/otherkatudou/waraikawasemi.jpg" width="50%" height="50%"><br>
+          <h4>かわせみが被写体をやった写真や自分で撮った写真を載せます</h4><br>
+          <a href="other1.html" class="button">記事を読む</a></center>
+    <hr style="border-top: 2px dashed #5ad3ab; border-bottom: none;">
+<p>&nbsp;</p>
+<style>.box {
+  position:relative; 
+  padding:10px;
+  }
+  .box:before {
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  border-left:#4e7bcc 1px solid; /*左の境界線の指定*/
+  border-top:#4e7bcc 1px solid; /*上の境界線の指定*/
+  }
+  .box:after {
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  border-right:#4e7bcc 1px solid; /*右の境界線の指定*/
+  border-bottom:#4e7bcc 1px solid; /*下の境界線の指定*/
+  }
+  .box p {
+  margin:0;
+  padding:0;
+  }
+  .box p {
+  margin:0;
+  padding:0;
+  }
+  
+  .list-011 {
+                  list-style-type: disc;
+                  padding: 1em 1em 1em 2.5em;
+                  border-left: 5px solid #5ad3ab;
+                  background-color: #f2f2f2;
+              }
+              
+              .list-011 li {
+                  padding: .3em .3em .3em 0;
+              }
+              
+              .list-011 li::marker {
+                  color: #5ad3ab;
+                  font-size: 1.1em;
+              }</style> <br><br>
+                  
+              </center>
+        <style>.heading-031 {
+            position: relative;
+            padding: .3em 0 .2em 1em;
+            border-bottom: 3px solid #5ad3ab;
+            color: #715050;
+        }
+        
+        .heading-031::before {
+            position: absolute;
+            top: 0;
+            left: .3em;
+            transform: rotate(55deg);
+            height: 11px;
+            width: 12px;
+            background: #5ad3ab;
+            content: '';
+        }
+        
+        .heading-031::after {
+            position: absolute;
+            transform: rotate(15deg);
+            top: .6em;
+            left: 0;
+            height: 8px;
+            width: 8px;
+            background: #5ad3ab;
+            content: '';
+        }</style>
+          
+       <!--/area5--></section>
+    <section>
+      <!--/area6--></section>
+    <h2 class="heading-031">作品ポートフォリオ</h2>
+    <br> 
+    <br>  
+   <center><h2>いままでつくった作品をポートフォリオにしました</h2>
+    <br>   
+    <img src="images/otherkatudou/hana.jpg" width="50%" height="50%"><br>
+    <h4>これまで作ってきた作品・絵を張ります</h4><br>
+    <a href="other4.html" class="button">記事を読む</a></center>
+        <style>.heading-031 {
+            position: relative;
+            padding: .3em 0 .2em 1em;
+            border-bottom: 3px solid #5ad3ab;
+            color: #715050;
+        }
+        
+        .heading-031::before {
+            position: absolute;
+            top: 0;
+            left: .3em;
+            transform: rotate(55deg);
+            height: 11px;
+            width: 12px;
+            background: #5ad3ab;
+            content: '';
+        }
+        
+        .heading-031::after {
+            position: absolute;
+            transform: rotate(15deg);
+            top: .6em;
+            left: 0;
+            height: 8px;
+            width: 8px;
+            background: #5ad3ab;
+            content: '';
+        }</style>
+       <!--/area6--></section> 
+<br>
+<br>
+  <footer id="footer">
+  <small>&copy; copyright.</small>
+  </footer>
+    
+    <!--/contaier--></div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/4-2-2/js/4-2-2.js"></script>
+</body>
+</html>
+<style>#splash {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #63a0ad;
+    z-index: 9999999;
+    text-align:center;
+    color:#fff;
+  }
+  
+  #splash-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  
+  /*========= 画面遷移のためのCSS ===============*/
+  
+  /*画面遷移アニメーション*/
+  .splashbg{
+      display: none;
+  }
+  
+  /*bodyにappearクラスがついたら出現*/
+  body.appear .splashbg{
+      display: block;
+      content: "";
+      position:fixed;
+    z-index: 999;
+      width: 100%;
+      height: 100vh;
+      top: 0;
+    left: 0;
+      transform: scaleY(0);
+      background-color: #63a0ad;/*伸びる背景色の設定*/
+    animation-name:PageAnime;
+    animation-duration:1.2s;
+    animation-timing-function:ease-in-out;
+    animation-fill-mode:forwards;
+  
+  }
+  
+  @keyframes PageAnime{
+    0% {
+      transform-origin:bottom;
+      transform:scaleY(0);
+    }
+    50% {
+      transform-origin:bottom;
+      transform:scaleY(1);
+    }
+    50.001% {
+      transform-origin:top;
+    }
+    100% {
+      transform-origin:top;
+      transform:scaleY(0);
+    }
+  }
+  
+  /*画面遷移の後現れるコンテンツ設定*/
+  
+  #container{
+    opacity: 0;/*はじめは透過0に*/
+  }
+  
+  /*bodyにappearクラスがついたら出現*/
+  body.appear #container{
+    animation-name:PageAnimeAppear;
+    animation-duration:1s;
+    animation-delay: 0.8s;
+    animation-fill-mode:forwards;
+    opacity: 0;
+  }
+  
+  @keyframes PageAnimeAppear{
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+  }
+  }
+  
+  /*========= レイアウトのためのCSS ===============*/
+  
+  h1{
+    font-size:1.2rem;
+  }
+  
+  h2{
+    font-size:1.2rem;
+    text-align: center;
+    margin: 0 0 30px 0;
+  }
+  
+  p{
+    margin-top:20px;  
+  }
+  
+  small{
+    color:#fff;
+    display: block;
+    text-align: center;
+  }
+  
+  #header{
+    background:#63a0ad;
+    color:#fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  section{
+    padding:100px 30px;
+  }
+  
+  section:nth-child(2n){
+    background:#f3f3f3; 
+  }
+  
+  #footer{
+    background:#63a0ad;
+    padding:20px;
+  }</style>       
+
+    
+  
+      
+   
