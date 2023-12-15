@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf8">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>python</title>
+</head>
+<body>
+<header><img src="images/doyohead.webp" alt=""class="doyo"></div></header></body>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+<style>.doyo{width:100%;
+          height:auto;
+          max-width:100vw;}
+     img{width:100;}</style>
+<link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+<link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/8-2-1/css/8-2-1.css">
+
+<link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-6/css/6-1-6.css">
+
+</head>
+<style>
+  h1 {
+font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+ #myImage {
+    width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+h2
+{
+font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+ #myImage {
+    width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+p
+{
+font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+ #myImage {
+    width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+  .slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
+   width:94%;
+    margin:0 auto;
+}
+
+.slider img {
+    width:100%;/*スライダー内の画像を横幅100%に*/
+    height:auto;
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+
+.slider .slick-slide {
+    margin:0 10px;
+}
+
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev, 
+.slick-next {
+    position: absolute;/*絶対配置にする*/
+    top: 42%;
+    cursor: pointer;/*マウスカーソルを指マークに*/
+    outline: none;/*クリックをしたら出てくる枠線を消す*/
+    border-top: 2px solid #5ad3ab;/*矢印の色*/
+    border-right: 2px solid #5ad3ab;/*矢印の色*/
+    height: 15px;
+    width: 15px;
+}
+
+.slick-prev {/*戻る矢印の位置と形状*/
+    left: -1.5%;
+    transform: rotate(-135deg);
+}
+
+.slick-next {/*次へ矢印の位置と形状*/
+    right: -1.5%;
+    transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+    text-align:center;
+  margin:20px 0 0 0;
+}
+
+.slick-dots li {
+    display:inline-block;
+  margin:0 5px;
+}
+
+.slick-dots button {
+    color: transparent;
+    outline: none;
+    width:8px;/*ドットボタンのサイズ*/
+    height:8px;/*ドットボタンのサイズ*/
+    display:block;
+    border-radius:50%;
+    background:#ccc;/*ドットボタンの色*/
+}
+
+.slick-dots .slick-active button{
+    background:#5ad3ab;/*ドットボタンの現在地表示の色*/
+}
+
+
+/*========= レイアウトのためのCSS ===============*/
+
+body{
+  background:#eee;
+}
+
+h2,p {
+    text-align:center;
+    padding:20px;
+}
+
+ul{
+  margin:0;
+  padding: 0;
+  list-style: none;
+}
+
+a{
+  color: #5ad3ab;
+}
+
+a:hover,
+a:active{
+  text-decoration: none;
+}
+
+#footer{
+    color:#5ad3ab;
+    padding:60px;
+  }
+  small {
+      background: #5ad3ab;
+      color: #fff;
+      display: block;
+      text-align: center;
+      padding: 20px;
+  }
+   .menu-toggle {
+      position: absolute;
+      top: 10px; /* 適切な位置に調整してください */
+      right: 30px; /* 適切な位置に調整してください */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 50px;
+      height: 40%;
+      cursor: pointer;
+    }
+    
+    .menu-toggle span {
+      background-color: #fff; /* ハンバーガーメニューの線の色 */
+      width: 150%;
+      height: 20%;
+    }
+    
+    .menu {
+      display: none;
+      position: absolute;
+      top: 50px; /* 適切な位置に調整してください */
+      margin-right:  60;
+      width: 100%;
+      background-color: #5ad3ab; /* メニューの背景色 */
+      padding: 10px;
+      text-align: center;
+    }
+    
+    .menu a {
+      display: block;
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: #fff; /* メニューのリンクの色 */
+    }
+    img{width:55%;
+    height:55%;}
+
+</style>
+<body>
+  <div id="main-vidual">
+  <!--/main-vidual--></div>  
+  <main>
+    <ul id="page-link">
+      <li><a href="#area-1">CSV</a></li>
+      <li><a href="#area-2">導入</a></li>
+      <li><a href="#area-3"></a>結果</li>
+    </ul>
+    <section class="area" id="area-1">
+     <center> <h2>CSV</h2>
+      <p>単純にCSVを開いただけだと画像のようになります。</p>
+      <p><img src="images/python/tizutesutocsv.png" alt="python"width="600" height="400"></p>
+      <p>これだと地図にリンクになっていないので見ずらいですね</p>
+      </b></p><!--/area1--></section>
+      <section class="area" id="area-2">
+      <br>
+      <p>前提として、urlには変数を与えることが可能である。 maps ?q= ~</p>
+      <p>?q=を描くことで〜の部分に変数を加えることが可能である。</p>
+      <p><img src="images/python/tizu1.png" alt="python"width="600" height="400"></p>
+      <p><img src="images/python/tizu2.png" alt="python"width="600" height="400"></p>
+      <p><h2>文字列の置換について</h2></p>
+      <p>csvなどを使うと,や()など必要ないものが含まれている場合が多くある。その際に文字列の置換を使うことで不要なものを取り除くことが可能である。</p>
+      <p>data[3]=data[3].replace("(","")</p>
+      <P>※一つ目のダブルクォーテーションの間の(を消すことができる。.replace("","")を辛べてると複数の文字を消すことが可能である。</P>
+      <p><img src="images/python/tizu3.png" alt="python"width="600" height="400"></p>
+      <p>文字の連結は~+~で文字を連結することが可能である。</p>
+      <p><img src="images/python/tizu4.png" alt="python"width="600" height="400"></p>
+      <p><img src="images/python/tizu5.png" alt="python"width="600" height="400"></p>
+     <p><img src="images/python/tizu6.png" alt="python"width="600" height="400"></p>
+    
+    <!--/area2--></section>
+      <section class="area" id="area-3">
+        
+         <p><h2>結果</h2></p>
+         <p>文字にデータを与える。</p>
+         <p><img src="images/python/tizukekka3.webp" alt="python"width="600" height="400"></p>
+    
+</p><P>リストから抽出したデータにurlをつける</P>
+        <p><img src="images/python/tizukekka.webp" alt="python"width="600" height="400"></p>
+        <p>しかしこれだと”場所”のデータがない場所にまでurlを与えてしまっている。</p>
+        <p><img src="images/python/tizukekka4.webp" alt="python"width="600" height="400"></p>
+         <p><img src="images/python/tikzukekka2.webp" alt="python"width="600" height="400"></p>
+         <p>if文、else文を活用することで必要な場所にだけデータを与えることが可能になることが分かりました。</p>
+    <!--/area3--></section>
+  <!--/main--></center></main>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/8-2-1/js/8-2-1.js"></script>
+</body>
+</html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+
+  </script>
+  <footer id="footer">
+    <small>&copy; copyright.</small>
+    </footer>
+</body>
+</head></html>
